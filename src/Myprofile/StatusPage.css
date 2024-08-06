@@ -1,0 +1,94 @@
+.hg1 {
+  font-size: 30px;
+  color: #f5eded;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.form-container {
+  margin: 20px 0;
+}
+
+.status-page1 {
+  margin: 20px 0;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.89);
+  text-align: center;
+ 
+  border-radius: 10px;
+}
+.cols
+{
+  color: #ccc;
+  margin-right: 0%;
+}
+.employee-details {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.progress-step {
+  position: relative;
+  margin: 0 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.progress-step .circle {
+  margin-left: 30%;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.progress-step.completed .circle {
+  background-color: green;
+}
+
+.progress-step.pending .circle {
+  background-color: yellow;
+}
+
+.arrow-mark {
+  margin-right: 30px;
+  margin-top: -20px;
+  width: 90px;
+  height: 2px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.arrow-mark::after {
+
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ccc;
+}
+
+.back1-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back1-button:hover {
+  opacity: 0.9;
+}

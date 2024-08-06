@@ -1,0 +1,231 @@
+/* General Styles */
+.app {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 79vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+ 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(17, 17, 17, 0.959);
+  width: 60%;
+  margin-left: 20%;
+}
+
+/* Header */
+
+
+/* Container for date picker, clock in/out, status, and history */
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96%; /* Set the container width to 60% */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  overflow: hidden; /* Hide overflow to ensure scrolling is handled correctly */
+  height: calc(100vh - 80px); /* Adjust height to account for header */
+}
+
+/* Date Picker Container */
+.date-picker-container {
+  margin: 20px;
+}
+
+/* Date Picker Styles */
+.date-picker {
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Clock In/Out Button */
+.clock-in-out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+.clock-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+  margin-left: 0%;
+}
+
+.clock-btn:hover {
+  transform: scale(1.1);
+}
+
+.clock-btn:active {
+  animation: vibration 0.3s linear;
+}
+
+.clock-btn.clocked-in {
+  background-color: #dc3545;
+}
+/* Date Display */
+.date-display {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  position: absolute;
+  bottom: -30px; /* Adjust based on spacing needed */
+  right: 0;
+}
+
+/* Status Boxes */
+.status {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.status-box {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  max-width: 180px;
+}
+
+.status-box span:first-child {
+  display: block;
+  font-weight: bold;
+}
+
+/* History Section */
+.history {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px; /* Adds space between the history and buttons */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.history-list {
+  max-height: 200px; /* Height of the scrollable area */
+  padding-right: 20px; /* Space for the scrollbar */
+}
+
+.history-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 10px;
+}
+
+.history-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+}
+
+.scroll-up-btn {
+  top: 10px;
+  right: 10px;
+}
+
+.scroll-down-btn {
+  bottom: 10px;
+  right: 10px;
+}
+
+.scroll-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Buttons Container */
+/* Container for buttons */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 96%; /* Adjust based on the desired width */
+  margin: 20px auto; /* Center the buttons container and add spacing */
+}
+
+/* Download Button */
+/* Container for buttons */
+
+/* Download Button */
+.download-btn {
+ 
+  width: 20%; /* Set width to 30% */
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #17a2b8;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-right: 60%;
+ margin-top: 30px ;
+}
+
+.download-btn:hover {
+  background-color: #138496;
+  transform: scale(1.1);
+}
+
+/* Back Button */
+.back-btn {
+  margin-top: -40px;
+  width: 20%; /* Set width to 30% */
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-left: 70%;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Spacer to create a gap between buttons */
+.spacer {
+  width: 10px; /* Gap between the buttons */
+}

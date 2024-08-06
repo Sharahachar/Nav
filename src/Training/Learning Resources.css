@@ -1,0 +1,108 @@
+/* src/LearningResources.css */
+.learning-resources {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.05); /* Light background with transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.699); /* Box shadow */
+  width: 40%; /* 70% width */
+  margin: 0 auto; /* Center horizontally */
+  border-radius: 8px;
+  position: relative;
+}
+
+.title {
+  
+  text-align: center;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.fgf{
+  margin-left: 0%;
+}
+
+.scroll-container {
+  position: relative;
+  overflow: hidden;
+  height: 400px; /* Set a fixed height */
+}
+
+.resources-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 100%; /* Ensure it doesn't exceed the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 20px; /* Space for scrollbar */
+}
+
+.resource {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resource h2 {
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.resource p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.resource p strong {
+  color: #333;
+}
+
+.scroll-button {
+  position: absolute;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #004999;
+  transform: scale(1.1);
+}
+
+.scroll-button.up {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-button.down {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.bkk-button {
+  margin-left: 40%;
+ margin-top: 20px;
+  width: 20%;
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #004999;
+  transform: scale(1.05);
+}

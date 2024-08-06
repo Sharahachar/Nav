@@ -1,0 +1,98 @@
+/* src/UpcomingSessions.css */
+.upcoming-sessions {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: none; /* Transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.753); /* Box shadow */
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    position: relative;
+  }
+  .fdf{
+    margin-left: 0%;
+  }
+  .sessions-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .sessions-container {
+    display: flex;
+    width: 100%;
+    animation: slide 20s linear infinite; /* Adjust duration as needed */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .rock {
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .session {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 300px; /* Fixed width for scrolling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 30px; /* 30px gap between sessions */
+    transition: transform 0.3s ease;
+  }
+  
+  .sessions-container .session:last-child {
+    margin-right: 0;
+  }
+  
+  .session:hover {
+    transform: scale(1.05);
+  }
+  
+  .session h2 {
+    color: #0066cc;
+    margin-bottom: 10px;
+  }
+  
+  .session p {
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .session p strong {
+    color: #333;
+  }
+  
+  .button-container {
+    width: 15%;
+    margin-left: 40%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .back-button {
+    width: 10%;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 45%;
+  }
+  
+  .back-button:hover {
+    background-color: #004999;
+    transform: scale(1.05);
+  }
+  
