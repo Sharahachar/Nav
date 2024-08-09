@@ -9,8 +9,7 @@ body {
     width: 60%; /* 50% width */
     margin: 0 auto; /* Center the profile container */
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.87);
     margin-top: 20px;
     max-height: 550px; /* Adjust the max height as needed */
     overflow-y: auto; /* Enable vertical scrolling */
@@ -31,9 +30,8 @@ body {
     max-width: 1200px;
     margin: 20px;
     padding: 20px;
-    background-color: #f0f0f0;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
   }
   
   .profile-content:hover {
@@ -86,18 +84,19 @@ body {
   
   
   .profile-section:hover {
-    background-color: #f9f9f9; /* Light background color on hover */
+    background-color: #0461ec; /* Light background color on hover */
     border-left: 4px solid #007bff; /* Border left color change on hover */
   }
   
   .profile-section h2 {
-    border-bottom: 2px solid #007bff;
+  
     padding-bottom: 5px;
     margin-bottom: 10px;
   }
   
   .profile-section p,
   .profile-section input {
+    color:white;
     margin: 5px 0;
   }
   
@@ -168,6 +167,7 @@ body {
     transform: scale(1.05); /* Slightly scale up button on hover */
   }
   .sdg{
+    color: #ccc;
     margin-left:00px;
   }
   
